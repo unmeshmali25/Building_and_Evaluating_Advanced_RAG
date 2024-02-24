@@ -22,3 +22,6 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded you
 
 Need to buy more credits and try again. 
 ------------------------------
+Response : Unmesh was employed at CEEW as a Sustainable Mobility Research Assistant in May 2022.
+My take : This is wrong answer. I don't have any weekly blogs in 2022. However, I was employed at the said organization in May 2021. 
+This RAG application needs to be more advanced (will ask same question through window sentence retrieval) and also setup evaluation later. 
