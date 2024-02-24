@@ -1,6 +1,4 @@
 #!pip install python-dotenv
-
-
 import os
 import openai
 from dotenv import load_dotenv, find_dotenv
@@ -71,11 +69,11 @@ def get_prebuilt_trulens_recorder(query_engine, app_id):
         )
     return tru_recorder
 
-from llama_index import ServiceContext, VectorStoreIndex, StorageContext
-from llama_index.node_parser import SentenceWindowNodeParser
-from llama_index.indices.postprocessor import MetadataReplacementPostProcessor
-from llama_index.indices.postprocessor import SentenceTransformerRerank
-from llama_index import load_index_from_storage
+from llama_index.core import ServiceContext, VectorStoreIndex, StorageContext
+from llama_index.core.node_parser import SentenceWindowNodeParser
+from llama_index.core.indices.postprocessor import MetadataReplacementPostProcessor
+from llama_index.core.indices.postprocessor import SentenceTransformerRerank
+from llama_index.core import load_index_from_storage
 import os
 
 
@@ -124,13 +122,13 @@ def get_sentence_window_query_engine(
     return sentence_window_engine
 
 
-from llama_index.node_parser import HierarchicalNodeParser
+from llama_index.core.node_parser import HierarchicalNodeParser
 
-from llama_index.node_parser import get_leaf_nodes
-from llama_index import StorageContext
-from llama_index.retrievers import AutoMergingRetriever
-from llama_index.indices.postprocessor import SentenceTransformerRerank
-from llama_index.query_engine import RetrieverQueryEngine
+from llama_index.core.node_parser import get_leaf_nodes
+from llama_index.core import StorageContext
+from llama_index.core.retrievers import AutoMergingRetriever
+from llama_index.core.indices.postprocessor import SentenceTransformerRerank
+from llama_index.core.query_engine import RetrieverQueryEngine
 
 
 def build_automerging_index(
