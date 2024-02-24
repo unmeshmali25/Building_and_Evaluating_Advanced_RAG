@@ -3,6 +3,16 @@ The repository uses llamaindex to build 3 levels of RAG applications on my perso
 
 IMP : This is a follow-along from Deeplearning.AI's short course. But I am using my own keys and data to expand on the implementation. 
 
+PROMPT : 
+Where was Unmesh employed in May 2022?
+
+RESPONSE : 
+Unmesh was employed at CEEW as a Sustainable Mobility Research Assistant in May 2022.
+
+
+
+
+
 
 Debugging 
 ------------------------------
